@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Maharashtra | Beaches · Hills · Ghats · Adventure</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font for subtle elegance -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons (optional but adds flair) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        * {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: #f8fafc;
+        }
+        .carousel-item img {
+            height: 70vh;
+            object-fit: cover;
+            filter: brightness(0.75);
+        }
+        .carousel-caption {
+            background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 100%);
+            border-radius: 1rem;
+            padding: 1.5rem 2rem;
+            bottom: 3rem;
+        }
+        .carousel-caption h2 {
+            font-weight: 600;
+            text-shadow: 2px 2px 5px #000;
+        }
+        .carousel-caption p {
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 3px #000;
+        }
+        .section-title {
+            position: relative;
+            font-weight: 600;
+            margin-bottom: 2.5rem;
+            color: #1e293b;
+        }
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #0d6efd;
+            margin: 0.7rem 0 0;
+            border-radius: 2px;
+        }
+        .card {
+            border: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 10px 20px -5px rgba(0,0,0,0.08);
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 25px 30px -12px rgba(0,40,100,0.25);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            background-color: #cbd5e1;
+        }
+        .badge-activity {
+            background-color: #0d6efd10;
+            color: #0d6efd;
+            border: 1px solid #0d6efd30;
+            font-weight: 500;
+            padding: 0.4rem 0.9rem;
+            border-radius: 30px;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+        }
+        .ghat-card .card-header {
+            background-color: #1e3a5f;
+            color: white;
+            font-weight: 600;
+        }
+        .footer {
+            background-color: #0b1e33;
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR (light, modern) ================= -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-compass"></i> Maharashtra Tourism
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" 
+                aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#beaches">Beaches</a></li>
+                <li class="nav-item"><a class="nav-link" href="#hillstations">Hill Stations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ghats">Ghats</a></li>
+                <li class="nav-item"><a class="nav-link" href="#adventure">Adventure</a></li>
+                <li class="nav-item">
+    <a class="nav-link" href="forts.html">Forts</a>
+</li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ================ SCROLLING IMAGES CAROUSEL (HEAD SECTION) ================ -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="konkan.jpg" class="d-block w-100" alt="Konkan beach">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Pristine Konkan Beaches</h2>
+                <p>Golden sands, swaying palms & peaceful coastline</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="lonvala.jpg" class="d-block w-100" alt="Mahabaleshwar hills">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Misty Hill Stations</h2>
+                <p>Mahabaleshwar, Lonavala, Matheran – eternal favourites</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="westernaghates.jpg" class="d-block w-100" alt="Western Ghats">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Majestic Western Ghats</h2>
+                <p>UNESCO heritage, lush valleys & thrilling ghats</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="advantuer.jpg" class="d-block w-100" alt="Adventure sports">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Adventure Playground</h2>
+                <p>Trekking, paragliding, river rafting & more</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="container my-5">
+
+    <!-- Introduction / tagline -->
+    <div class="text-center mb-5">
+        <h1 class="display-5 fw-bold text-dark">Explore the soul of Maharashtra</h1>
+        <p class="lead text-secondary col-lg-8 mx-auto">From sun-kissed beaches to evergreen hills, serpentine ghats to heart-pumping adventures – the state offers endless memories.</p>
+    </div>
+    <div class="text-center my-4">
+    <a href="forts.html" class="btn btn-success btn-lg px-4">
+        ⚔️ Explore Shivaji Maharaj Forts
+    </a>
+</div>
+
+    <!-- ========== BEACHES SECTION ========== -->
+    <section id="beaches" class="mb-5">
+        <h2 class="section-title"><i class="bi bi-umbrella text-primary me-2"></i>Coastal escapes – Beaches</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="alibug.jpg" class="card-img-top" alt="Alibaug beach" style="height: fit-content;">
+                    <div class="card-body">
+                        <h5 class="card-title">Alibaug <span class="badge bg-primary">popular</span></h5>
+                        <p class="card-text">Close to Mumbai, Alibaug offers a blend of Portuguese forts, clean shores and water sports. Perfect for a weekend getaway.</p>
+                        <span class="badge-activity">⚓ jet skiing</span> <span class="badge-activity">🏖️ beach shacks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="scuba.jpg" class="card-img-top" alt="Tarkarli beach" style="height: fit-content;">
+                    <div class="card-body">
+                        <h5 class="card-title">Tarkarli <span class="badge bg-success">scuba diving</span></h5>
+                        <p class="card-text">Crystal clear waters and coral reefs make Tarkarli a hotspot for snorkeling and scuba diving. Also known for its backwaters.</p>
+                        <span class="badge-activity">🤿 scuba</span> <span class="badge-activity">🛶 kayaking</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="ganapathipulai.jpg" class="card-img-top" alt="Ganpatipule beach" style="height: fit-content;">
+                    <div class="card-body">
+                        <h5 class="card-title">Ganpatipule</h5>
+                        <p class="card-text">Famous for the Swayambhu Ganesh temple right on the shore. Calm waters and white sand stretch for miles.</p>
+                        <span class="badge-activity">🙏 temple visit</span> <span class="badge-activity">🐚 shell museum</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- extra beach note -->
+        <div class="alert alert-light border mt-4">
+            <i class="bi bi-info-circle-fill me-2"></i> Other pristine beaches: <strong>Diveagar, Harihareshwar, Velas (turtle nesting), Murud, Kashid</strong> – each with unique charm.
+        </div>
+    </section>
+
+    <!-- ========== HILL STATIONS SECTION ========== -->
+    <section id="hillstations" class="mb-5">
+        <h2 class="section-title"><i class="bi bi-tree-fill text-success me-2"></i>Cool retreats – Hill stations</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="mahablaswarexplore.jpg" class="card-img-top" alt="Mahabaleshwar">
+                    <div class="card-body">
+                        <h5 class="card-title">Mahabaleshwar</h5>
+                        <p class="card-text">Crown of the Sahyadri, famous for strawberry farms, panoramic points and ancient temples. Boating at Venna lake is a must.</p>
+                        <span class="badge-activity">🍓 strawberry</span> <span class="badge-activity">🔭 sunset point</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="lonvalaexplore.jpg" class="card-img-top" alt="Lonavala">
+                    <div class="card-body">
+                        <h5 class="card-title">Lonavala & Khandala</h5>
+                        <p class="card-text">Lush green valleys, waterfalls and the famous Bhaja caves. Chowk point and Duke's nose offer spectacular views.</p>
+                        <span class="badge-activity">🌧️ monsoon magic</span> <span class="badge-activity">🍬 chikki</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="manthera.jpg" class="card-img-top" alt="Matheran">
+                    <div class="card-body">
+                        <h5 class="card-title">Matheran</h5>
+                        <p class="card-text">Asia's only automobile-free hill station. Toy train, red laterite paths and 38 viewpoints – a walker's paradise.</p>
+                        <span class="badge-activity">🚂 toy train</span> <span class="badge-activity">🚫 no vehicles</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GHATS (WESTERN GHATS & PASSES) ========== -->
+    <section id="ghats" class="mb-5">
+        <h2 class="section-title"><i class="bi bi-mountain text-warning me-2"></i>Western Ghats – Ghats & passes</h2>
+        <p class="mb-4">The majestic escarpments of the Sahyadri are crisscrossed with ancient ghats (mountain passes) that offer thrilling drives and breathtaking scenery.</p>
+        <div class="row g-4">
+            <div class="col-md-3 col-6">
+                <div class="card ghat-card text-center h-100">
+                    <div class="card-header">Amboli Ghat</div>
+                    <img src="amboli.jpg" class="card-img-top" alt="Amboli">
+                    <div class="card-body">
+                        <p class="card-text">Southern Maharashtra's rain country. Known for waterfalls, mist, and rare biodiversity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card ghat-card text-center h-100">
+                    <div class="card-header">Bhor Ghat</div>
+                    <img src="bhaour.jpg" class="card-img-top" alt="Bhor Ghat">
+                    <div class="card-body">
+                        <p class="card-text">Railway and road artery between Mumbai and Pune. Ancient caravan route with 80+ rail tunnels.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card ghat-card text-center h-100">
+                    <div class="card-header">Kumbharli Ghat</div>
+                    <img src="kumbarli.jpg" class="card-img-top" alt="Kumbharli Ghat">
+                    <div class="card-body">
+                        <p class="card-text">Connects Chiplun to Karad, flanked by waterfalls and the scenic Koyna wildlife.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="card ghat-card text-center h-100">
+                    <div class="card-header">Tamhini Ghat</div>
+                    <img src="thamini.jpg" class="card-img-top" alt="Tamhini Ghat">
+                    <div class="card-body">
+                        <p class="card-text">A monsoon jewel, with countless waterfalls and winding roads through thick forests.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4 text-center">
+            <span class="badge-activity">🌿 Malshej Ghat</span>
+            <span class="badge-activity">⛰️ Varandha Ghat</span>
+            <span class="badge-activity">🏞️ Kasara Ghat</span>
+            <span class="badge-activity">🌋 Amba Ghat</span>
+        </div>
+    </section>
+
+    <!-- ========== ADVENTURE PLACES ========== -->
+    <section id="adventure" class="mb-5">
+        <h2 class="section-title"><i class="bi bi-lightning-charge-fill text-danger me-2"></i>Adrenaline rush – adventure hubs</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="rivr rafting.jpg" class="card-img-top" alt="Kundalika rafting">
+                    <div class="card-body">
+                        <h5 class="card-title">Kundalika River Rafting</h5>
+                        <p class="card-text">One of the few year-round rafting destinations in India. Grade II+ rapids near Kolad, 100 km from Mumbai.</p>
+                        <span class="badge-activity">🛶 rafting</span> <span class="badge-activity">🏕️ riverside camping</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="paraglading.png" class="card-img-top" alt="Kamshet paragliding">
+                    <div class="card-body">
+                        <h5 class="card-title">Kamshet Paragliding</h5>
+                        <p class="card-text">Thermal heaven for paragliders. Tandem flights and training amid lush hills, 110 km from Mumbai.</p>
+                        <span class="badge-activity">🪂 paragliding</span> <span class="badge-activity">📸 aerial views</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="shayadri.jpg" class="card-img-top" alt="Visapur trekking">
+                    <div class="card-body">
+                        <h5 class="card-title">Sahyadri trekking</h5>
+                        <p class="card-text">Hundreds of forts & hills – Rajmachi, Harishchandragad, Kalavantin – offer epic treks for all levels.</p>
+                        <span class="badge-activity">🥾 night trek</span> <span class="badge-activity">⛰️ fort climb</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- extra adventure highlights -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="p-4 bg-white rounded-4 border-start border-4 border-primary">
+                    <i class="bi bi-binoculars-fill me-2 fs-4"></i> <strong>Wildlife & water:</strong> Scuba diving at <strong>Malvan</strong> (Sindhudurg) , tiger safari at <strong>Tadoba</strong>, birding at <strong>Bhimashankar</strong> & <strong>Narnala</strong>.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- extra call to action / explore button (optional) -->
+    <div class="d-flex justify-content-center mt-5">
+        <a href="#" class="btn btn-outline-secondary btn-lg px-5 rounded-pill">
+            <i class="bi bi-map"></i> Plan your Maharashtra adventure
+        </a>
+    </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer pt-4 pb-3 mt-5">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <div class="col-md-6">
+                <h5><i class="bi bi-flag"></i> Maharashtra Tourism</h5>
+                <p class="small">Experience the vibrant culture, serene landscapes and thrilling adventures of the Land of Marathas.</p>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled small">
+                    <li><a href="#" class="text-white-50 text-decoration-none">Beaches</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Hill stations</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Ghats & passes</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-unstyled small">
+                    <li><a href="#" class="text-white-50 text-decoration-none">Adventure</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Wildlife</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Heritage</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <p class="text-center text-white-50 small mb-0">© 2026 Maharashtra Tourism Development. All images courtesy of Picsum (illustrative).</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS (for carousel, toggles) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Auto carousel speed optional -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var carousel = new bootstrap.Carousel(document.getElementById('heroCarousel'), {
+            interval: 4000,
+            wrap: true
+        });
+    });
+</script>
+</body>
+</html>

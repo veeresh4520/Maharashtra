@@ -1,0 +1,26 @@
+/* Hero section styling */
+body {
+  background-image: url("https://i.pinimg.com/1200x/b6/f7/1a/b6f71ae11bf12ab213612c78bd4597a5.jpg");
+  background-size: cover;        /* fills full screen */
+  background-position: center;   /* keeps image centered */
+  background-repeat: no-repeat;
+  background-attachment: fixed;  /* stays visible while scrolling */
+}
+
+/* Optional: add white background to sections */
+section {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.hero-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+/* Make text readable on image */
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}

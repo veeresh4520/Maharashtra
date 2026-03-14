@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivaji Maharaj · Forts & Adventures</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- tiny style for uniform card images -->
+    <style>
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            background-color: #ced4da; /* fallback while loading */
+        }
+        .hero-section {
+            background: linear-gradient(rgba(20, 30, 40, 0.75), rgba(10, 20, 30, 0.8)), 
+                        url('FortBackground.jpg') center/cover no-repeat;
+            color: white;
+            padding: 5rem 0;
+            margin-bottom: 2rem;
+        }
+        .hero-section h1 {
+            font-weight: 600;
+            text-shadow: 2px 2px 6px #00000060;
+        }
+        .badge-adventure {
+            background-color: #d63384;
+            color: white;
+            font-size: 0.8rem;
+            margin-right: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ================= NAVBAR (updated link stays) ================= -->
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="explore.html">← Back to Explore</a>
+    <span class="navbar-text text-light-emphasis">मराठा गडकोट</span>
+  </div>
+</nav>
+
+<!-- ================= HERO SECTION (new) ================= -->
+<div class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4">Forts of the Maratha Empire</h1>
+        <p class="lead col-lg-8 mx-auto">Explore the majestic hill forts, witness the valour, and experience the adventurous trails that echo the legacy of Chhatrapati Shivaji Maharaj.</p>
+        <span class="badge bg-warning text-dark px-3 py-2 mt-2">350+ forts captured • 100+ trekking routes</span>
+    </div>
+</div>
+
+<!-- ================= MAIN FORTS SECTION ================= -->
+<section class="py-4">
+  <div class="container">
+
+    <h2 class="mb-4 border-bottom pb-2">⚔️ Iconic Forts</h2>
+    <p class="mb-4">Chhatrapati Shivaji Maharaj built, renovated and captured over 350 forts. Here are some of the most significant ones.</p>
+
+    <!-- first row (existing 3 forts with updated placeholder images & descriptions) -->
+    <div class="row g-4">
+      <!-- Raigad Fort -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="raigad.jpg" class="card-img-top" alt="Raigad fort">
+          <div class="card-body">
+            <h5 class="card-title">🏰 Raigad Fort</h5>
+            <p class="card-text">The capital fort of the Maratha empire, where Shivaji Maharaj was crowned in 1674. The iconic Takmak tok and royal durbar are must-sees.</p>
+            <span class="badge bg-secondary">Raigad district</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pratapgad Fort -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="pratabgard.jpg" class="card-img-top" alt="Pratapgad fort">
+          <div class="card-body">
+            <h5 class="card-title">⚔️ Pratapgad Fort</h5>
+            <p class="card-text">Site of the legendary encounter between Shivaji Maharaj and Afzal Khan. The fort offers panoramic views from the Mahabaleshwar region.</p>
+            <span class="badge bg-secondary">Near Mahabaleshwar</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sinhagad Fort -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="singhad.jpg" class="card-img-top" alt="Sinhagad fort">
+          <div class="card-body">
+            <h5 class="card-title">🦁 Sinhagad Fort</h5>
+            <p class="card-text">Previously known as Kondhana, this fort celebrates the bravery of Tanaji Malusare. A trekker's paradise just 30 km from Pune.</p>
+            <span class="badge bg-secondary">Pune district</span>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end first row -->
+
+    <!-- second row – MORE FORTS (new) -->
+    <div class="row g-4 mt-2">
+      <!-- Rajgad Fort -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="rajgad.jpg" class="card-img-top" alt="Rajgad fort">
+          <div class="card-body">
+            <h5 class="card-title">🏞️ Rajgad Fort</h5>
+            <p class="card-text">One of the longest serving capitals of the Maratha empire. It boasts of massive walls, three sub-plateaus and a mesmerizing view.</p>
+            <span class="badge bg-secondary">Pune district</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Torna Fort -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="torna.jpg" class="card-img-top" alt="Torna fort">
+          <div class="card-body">
+            <h5 class="card-title">⛰️ Torna Fort</h5>
+            <p class="card-text">The first fort captured by Shivaji Maharaj at age 16. Also known as Prachandagad, it's the highest hill-fort in the Pune region.</p>
+            <span class="badge bg-secondary">Bhor, Pune</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shivneri Fort -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <img src="shivnaari.jpg" class="card-img-top" alt="Shivneri fort">
+          <div class="card-body">
+            <h5 class="card-title">👶 Shivneri Fort</h5>
+            <p class="card-text">Birthplace of Chhatrapati Shivaji Maharaj. The fort has seven gates and a unique water system, nestled near Junnar.</p>
+            <span class="badge bg-secondary">Junnar, Pune</span>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end second row -->
+
+    <!-- third row – two more forts (Panhala & Lohagad) to enrich further -->
+    <div class="row g-4 mt-2">
+      <!-- Panhala Fort -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="panhala.jpg" class="card-img-top" alt="Panhala fort">
+          <div class="card-body">
+            <h5 class="card-title">🌄 Panhala Fort</h5>
+            <p class="card-text">Largest fort in the Deccan, with a rich history of Shivaji Maharaj's escape through a secret tunnel. Located near Kolhapur.</p>
+            <span class="badge bg-secondary">Kolhapur district</span>
+          </div>
+        </div>
+      </div>
+      <!-- Lohagad Fort -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm">
+          <img src="lohagad.jpg" class="card-img-top" alt="Lohagad fort">
+          <div class="card-body">
+            <h5 class="card-title">🏯 Lohagad Fort</h5>
+            <p class="card-text">Famous for its impressive 'vinchu kata' (scorpion tail) structure. A favourite among trekkers, especially in the monsoon.</p>
+            <span class="badge bg-secondary">Lonavala</span>
+          </div>
+        </div>
+      </div>
+      <!-- extra card : you could add another, but we'll use this column to show a "more forts" hint (optional) -->
+      
+
+  </div>
+</section>
+
+ <!-- ================= ADVENTURE ACTIVITIES SECTION (new) =================
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-3">🧗 Adventurous Fort Experiences</h2>
+    <p class="mb-5">Beyond history, these forts offer thrilling activities for adventure seekers and nature lovers.</p>
+
+    <div class="row g-4">
+       Trekking card 
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow">
+          <img src="https://picsum.photos/400/220?random=10&seed=trekking" class="card-img-top rounded-top" alt="Trekking on fort hills">
+          <div class="card-body">
+            <span class="badge-adventure badge">⛰️ moderate to tough</span>
+            <h5 class="card-title mt-2">Trekking & Hiking</h5>
+            <p class="card-text">Conquer the Sahyadri ranges with treks to Rajgad, Torna, and Lohagad. Many forts offer spectacular sunrise views and monsoon greenery.</p>
+            <a href="#" class="btn btn-outline-dark btn-sm">View treks</a>
+          </div>
+        </div>
+      </div>
+      <!-- Camping card 
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow">
+          <img src="https://picsum.photos/400/220?random=11&seed=camping" class="card-img-top rounded-top" alt="Camping near fort">
+          <div class="card-body">
+            <span class="badge-adventure badge">🏕️ overnight</span>
+            <h5 class="card-title mt-2">Camping & Night Stay</h5>
+            <p class="card-text">Several forts like Korigad, Visapur and Tikona allow night camping. Experience the clear skies and cool breeze with guided camps.</p>
+            <a href="#" class="btn btn-outline-dark btn-sm">Explore camps</a>
+          </div>
+        </div>
+      </div>
+      <!-- Heritage tours card 
+      <div class="col-md-4">
+        <div class="card h-100 border-0 shadow">
+          <img src="https://picsum.photos/400/220?random=12&seed=heritage" class="card-img-top rounded-top" alt="Historical tour">
+          <div class="card-body">
+            <span class="badge-adventure badge">📜 guided tours</span>
+            <h5 class="card-title mt-2">Heritage & History Walks</h5>
+            <p class="card-text">Join expert guides to uncover stories of battles, secret passages, and Maratha architecture at Raigad, Shivneri and Sinhagad.</p>
+            <a href="#" class="btn btn-outline-dark btn-sm">Book a walk</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- bonus adventure row: water sports / forts near coast? optional -->
+    <!-- <div class="row mt-4">
+      <div class="col-12">
+        <div class="p-4 bg-white rounded-3 shadow-sm d-flex flex-wrap align-items-center justify-content-between">
+          <span class="fw-bold"><i class="bi bi-water" style="font-size:1.5rem; margin-right:8px;"></i> Water forts: </span>
+          <span>🌀 Sindhudurg (scuba diving nearby) • 🌊 Vijaydurg • 🏝️ Padmadurg — coastal fortresses with water adventures.</span>
+          <a href="#" class="btn btn-sm btn-primary">Explore coastal forts</a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!-- ================= QUICK GALLERY / EXTRA IMAGES ================= -->
+<section class="py-4">
+  <div class="container">
+    <h3 class="fw-light">📸 Fort life in frames</h3>
+    <div class="row g-2 mt-3">
+      <div class="col-6 col-md-3"><img src="fortlife4.jpg" class="img-fluid rounded" alt="Fort view"></div>
+      <div class="col-6 col-md-3"><img src="fortlife2.jpg" class="img-fluid rounded" alt="Sunset at fort"></div>
+      <div class="col-6 col-md-3"><img src="fortlife3.jpg" class="img-fluid rounded" alt="Stone wall"></div>
+      <div class="col-6 col-md-3"><img src="fortlife1.jpg" class="img-fluid rounded" alt="Trek path"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-white text-center py-4 mt-3">
+  <div class="container">
+    <p class="mb-1">© 2026 Maharashtra Tourism | Fort Heritage · गडकोट संस्कृती</p>
+    <p class="small text-secondary">images for demonstration via picsum · adventure awaits</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS (optional, only for potential components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- optional icon link (for bi-water used above) -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</body>
+</html>
